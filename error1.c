@@ -13,7 +13,7 @@ static void		free_wsd(t_ph *wsd)
 		free(wsd);
 }
 
-static void		f_strt(t_lm *lm)
+static void		fr_strt(t_lm *lm)
 {
 	t_lnk	*wst;
 	t_ph	*wsd;
@@ -44,7 +44,7 @@ static void		f_strt(t_lm *lm)
 
 void			error_e(t_lm *lm, int error)
 {
-	f_strt(lm);
+	fr_strt(lm);
 	if (error)
 		ft_putstr("ERROR\n");
 	exit(0);
